@@ -3,9 +3,15 @@ import * as path from 'path';
 import * as vscode from 'vscode';
 
 import arrowComponent from './templates/arrowComponent';
+import styledArrowComponent from './templates/styledArrowComponent';
+import styledFile from './templates/styledFile';
 
-export default async (componentName: string, dir?: string) => {
-  const fileName = "index.tsx";
+export default async (
+  componentName: string,
+  { dir, styled }: { dir?: string; styled?: boolean }
+) => {
+  const COMPONENT_FILE_NAME = "index.tsx";
+  const STYLED_FILE_NAME = "styled.ts";
   const projectRoot = (vscode.workspace.workspaceFolders as any)[0].uri.fsPath;
 
   if (!dir) {
@@ -24,13 +30,19 @@ export default async (componentName: string, dir?: string) => {
     dir = dir + "/";
   }
   const dirWithFileName = dir + componentName;
-  const filePath = dirWithFileName + "/" + fileName;
+  const filePath = (fileName: string) => dirWithFileName + "/" + fileName;
 
   createDir(dirWithFileName);
-  await createFile(filePath, arrowComponent(componentName));
+
+  if (styled) {
+    await createFile(filePath(COMPONENT_FILE_NAME), styledArrowComponent(componentName));
+    await createFile(filePath(STYLED_FILE_NAME), styledFile());
+  } else {
+    await createFile(filePath(COMPONENT_FILE_NAME), arrowComponent(componentName));
+  }
 
   setTimeout(() => {
-    vscode.workspace.openTextDocument(filePath).then(editor => {
+    vscode.workspace.openTextDocument(filePath(COMPONENT_FILE_NAME)).then(editor => {
       if (!editor) {
         return;
       }

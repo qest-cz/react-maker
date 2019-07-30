@@ -2,7 +2,7 @@
   "name": "react-maker",
   "displayName": "React maker",
   "description": "Extension that creates react component in typescript.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "Qest-cz",
   "repository": "https://github.com/qest-cz/react-maker",
   "categories": [
@@ -14,7 +14,8 @@
     "vscode": "^1.17.0"
   },
   "activationEvents": [
-    "onCommand:extension.create-component"
+    "onCommand:extension.create-component",
+    "onCommand:extension.create-styled-component"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -22,12 +23,21 @@
       {
         "command": "extension.create-component",
         "title": "Create component"
+      },
+      {
+        "command": "extension.create-styled-component",
+        "title": "Create styled component"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "command": "extension.create-component",
+          "group": "1_modification",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "extension.create-styled-component",
           "group": "1_modification",
           "when": "explorerResourceIsFolder"
         }
