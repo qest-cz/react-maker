@@ -2,13 +2,19 @@
   "name": "react-maker",
   "displayName": "React maker",
   "description": "Extension that creates react component in typescript.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "Qest-cz",
   "repository": "https://github.com/qest-cz/react-maker",
+  "icon": "images/logo.png",
   "categories": [
     "Snippets",
     "Formatters",
     "Other"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "automation"
   ],
   "engines": {
     "vscode": "^1.17.0"
