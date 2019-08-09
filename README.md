@@ -1,10 +1,10 @@
 # React maker
 
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/Qest-cz.react-maker.svg)](https://vsmarketplacebadge.apphb.com/version-short/Qest-cz.react-maker.svg)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/Qest-cz.react-maker.svg)](https://vsmarketplacebadge.apphb.com/installs-short/Qest-cz.react-maker.svg)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/Qest-cz.react-maker.svg)](https://vsmarketplacebadge.apphb.com/downloads-short/Qest-cz.react-maker.svg)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/Qest-cz.react-maker.svg)](https://vsmarketplacebadge.apphb.com/rating-short/Qest-cz.react-maker.svg)
+[![Version](https://vsmarketplacebadge.apphb.com/version/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker)
+[![Install](https://vsmarketplacebadge.apphb.com/installs/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker)
+[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker&ssr=false#review-details)
 
 This extension creates function component in named folder with index.tsx
 
