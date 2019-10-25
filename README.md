@@ -6,13 +6,13 @@
 [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker)
 [![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker&ssr=false#review-details)
 
-This extension creates function component in named folder with index.tsx
+This extension creates a function component in a named folder with index.tsx
 
 ## Usages
 
 ![Usage](images/usage.gif)
 
-You can create component either by typing `Create component` in vscode terminal or right clicking any folder in tree view.
+You can create a component either by typing `Create component` in the vscode command pallete or by right-clicking any folder in the tree view.
 
 ```js
 import React from 'react';
