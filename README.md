@@ -12,7 +12,7 @@ This extension creates a function component in a named folder with index.tsx
 
 ![Usage](images/usage.gif)
 
-You can create a component either by typing `Create component` in the vscode command pallete or by right-clicking any folder in the tree view.
+You can create a component either by typing `Create component` in the vscode command palette or by right-clicking any folder in the tree view.
 
 ```js
 import React from 'react';
