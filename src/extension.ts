@@ -3,21 +3,22 @@ import * as vscode from 'vscode';
 import createComponent from './createComponent';
 
 const handleCreateComponent = async (args: any, styled?: boolean) => {
-  const componentName = await vscode.window.showInputBox({
+  const newComponentName = await vscode.window.showInputBox({
     prompt: `Component name`,
-    ignoreFocusOut: true,
+    ignoreFocusOut: false,
     valueSelection: [-1, -1]
   });
 
-  if (!componentName) {
+  if (!newComponentName) {
     return;
   }
 
   if (args) {
     const path = args.fsPath;
-    createComponent(componentName, { dir: path, styled });
+    const status = 'TBD for future changes.'
+    createComponent(newComponentName, { dir: path, styled });
   } else {
-    createComponent(componentName, { styled });
+    createComponent(newComponentName, { styled });
   }
 };
 
