@@ -10,7 +10,7 @@ export default async (
   componentName: string,
   { dir, styled }: { dir?: string; styled?: boolean }
 ) => {
-  const COMPONENT_FILE_NAME = "index.tsx";
+  const COMPONENT_FILE_NAME = vscode.workspace.getConfiguration('reactMaker').get("useComponentNameAsFileName")?componentName+".tsx":"index.tsx";
   const STYLED_FILE_NAME = "styled.ts";
   const projectRoot = (vscode.workspace.workspaceFolders as any)[0].uri.fsPath;
 

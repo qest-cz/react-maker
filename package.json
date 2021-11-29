@@ -48,6 +48,16 @@
           "when": "explorerResourceIsFolder"
         }
       ]
+    },
+    "configuration": {
+      "title": "React maker",
+      "properties": {
+        "reactMaker.useComponentNameAsFileName": {
+          "type": "boolean",
+          "default": false,
+          "description": "Will use the component name as filename instead of index.tsx"
+        }
+      }
     }
   },
   "scripts": {

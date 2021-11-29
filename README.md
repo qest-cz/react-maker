@@ -6,7 +6,7 @@
 [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker)
 [![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/Qest-cz.react-maker.svg)](https://marketplace.visualstudio.com/items?itemName=Qest-cz.react-maker&ssr=false#review-details)
 
-This extension creates a function component in a named folder with index.tsx
+This extension creates a function component in a named folder with index.tsx/{componentName}.tsx
 
 ## Usages
 
@@ -26,3 +26,6 @@ const ShowCase = (props: Props) => {
         
 export default ShowCase;
 ```
+
+## Configuration
+-   `reactMaker.useComponentNameAsFileName`: If filename should be name of component or index.tsx. Default value is index.tsx.
